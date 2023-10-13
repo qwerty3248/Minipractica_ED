@@ -1,0 +1,6 @@
+PROJECT_NAME           = "Práctica 1. Imágenes"
+OUTPUT_DIRECTORY       = /home/jesus/ED/Material Práctica 2 - Abstracción.TDA Imagen (Minipráctica)-20231002/ej01_imagenes/build/doc_doxygen/
+INPUT                  = /home/jesus/ED/Material Práctica 2 - Abstracción.TDA Imagen (Minipráctica)-20231002/ej01_imagenes/estudiante/include /home/jesus/ED/Material Práctica 2 - Abstracción.TDA Imagen (Minipráctica)-20231002/ej01_imagenes/estudiante/src /home/jesus/ED/Material Práctica 2 - Abstracción.TDA Imagen (Minipráctica)-20231002/ej01_imagenes/estudiante/doc
+GENERATE_LATEX         = NO
+IMAGE_PATH             = /home/jesus/ED/Material Práctica 2 - Abstracción.TDA Imagen (Minipráctica)-20231002/ej01_imagenes/estudiante/doc
+EXTRACT_PRIVATE        = NO

@@ -1,0 +1,11 @@
+instalar cmake, graphviz
+con cmake puedo hacer los makefiles de la lista de los makefiles cmakelist 
+en la carpeta build (cmake ../)
+
+
+Documentar el cpp, el programa basicamente
+cualquier nombre con el punto dox (.dox)
+como en el mainpage.dox
+
+
+

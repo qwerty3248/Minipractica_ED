@@ -1,0 +1,5 @@
+/home/jesus/ED/Material Práctica 2 - Abstracción.TDA Imagen (Minipráctica)-20231002/ej01_imagenes/build/CMakeFiles/image.dir
+/home/jesus/ED/Material Práctica 2 - Abstracción.TDA Imagen (Minipráctica)-20231002/ej01_imagenes/build/CMakeFiles/negativo.dir
+/home/jesus/ED/Material Práctica 2 - Abstracción.TDA Imagen (Minipráctica)-20231002/ej01_imagenes/build/CMakeFiles/doc_doxygen.dir
+/home/jesus/ED/Material Práctica 2 - Abstracción.TDA Imagen (Minipráctica)-20231002/ej01_imagenes/build/CMakeFiles/edit_cache.dir
+/home/jesus/ED/Material Práctica 2 - Abstracción.TDA Imagen (Minipráctica)-20231002/ej01_imagenes/build/CMakeFiles/rebuild_cache.dir
