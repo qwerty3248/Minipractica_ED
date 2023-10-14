@@ -110,7 +110,75 @@ Image Zoom2X() const{
     
 }
 
+// Genera un icono como reducción de una imagen.
+Image Subsample(int factor) const{
+	
+	//la matriz sera factor x factor
+	Image chiquito (factor, factor);
+	//Image copia (*this);
+	int media = factor*factor;
+	byte suma = 0; 
+	int contador = 0, contador1 = 0, chico1 = 0, chico2 = 0;
+	for (int i = 0; i < media; i++){
+		for (int k = 0+contador; k < factor; k++){
+			for (int j = 0+contador1; j < factor; j++){
+				
+				suma += get_pixel(k,j);	
+				
+				
+			
+			
+			}
+			
+		}
+		suma = suma / media;
+		chiquito.set_pixel(chico1,chico2,suma);
+		chico2++;
+		if(chico2 >= factor){
+			chico2 = 0;
+			chico1++;
+		}
+		suma = 0;
+		contador += factor;
+		if (contador >= get_cols()){
+			contador = 0;
+			contador1 += factor;
+			
+		}
+		
+		
+	
+	
+	}
+	
+	
+	
+
+}
+
+// Modifica el contraste de una Imagen .
+void AdjustContrast (byte in1, byte in2, byte out1, byte out2);
 
 
+// Calcula la media de los píxeles de una imagen entera o de un fragmento de ésta.
+double Mean (int i, int j, int height, int width) const{
+
+	Image recuadro;
+	recuadro = Crop(i,j,height,width);
+	double suma = 0.0;
+	for (int i = 0; i < recuadro.get_rows(); i++){
+		for(int j = 0; j < recuadro.get_cols(); j++){
+			
+			suma += recuadro.get_pixel(i,j);
+			
+		}
+	
+	}
+	
+	return suma/recuadro.size();
+
+
+
+}
 	
 
