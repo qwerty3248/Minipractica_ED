@@ -157,7 +157,45 @@ Image Subsample(int factor) const{
 }
 
 // Modifica el contraste de una Imagen .
-void AdjustContrast (byte in1, byte in2, byte out1, byte out2);
+void AdjustContrast (byte in1, byte in2, byte out1, byte out2){
+
+	
+	for (int i = 0; i < get_rows(); i++){
+		for(int k = 0; k < get_cols(); k++){
+			byte aux = get_pixel(i,k);
+			if(aux >= 0 && aux <= in1){
+				
+				byte aux2 = 0+((out1 -0 / (in1 - 0)) * (aux-0));
+				
+			
+			}else if(aux >= in1 && aux <= in2){
+			
+				byte aux2 = in1+((out2 -out1 / (in2 - in1)) * (aux-in1));
+			
+			}else if (aux >= in2 && aux <= 255){
+			
+				byte aux2 = in2+((255 -ou2 / (255 - in2)) * (aux-in2));
+			
+			}
+			
+			set_pixel(i,k,aux2);
+		
+		}
+	
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
 // Calcula la media de los píxeles de una imagen entera o de un fragmento de ésta.
