@@ -248,22 +248,67 @@ void set_pixel (int i, int j, byte value);
       */
     bool Load (const char * file_path);
 
-    // Invierte
+    /**
+      * @brief Invierte una imagen.
+      * @return No devuelve nada.
+      * @post El objeto que llama a la funcion se modifica.
+      */
     void Invert();
 
-    // Modifica el contraste de una Imagen .
+    /**
+      * @brief Modifica el contraste de una imagen.
+      * @param in1 Umbral inferior de la imagen de entrada.
+      * @param in2 Umbral superior de la  imagen de entrada.
+      * @param out1 Umbral inferior de la imagen de salida.
+      * @param out2 Umbral superior de la imagen de salida.
+      * @pre 0 <= (in1,in2,out1,out2) <= 255.
+      * @pre in1 < in2.
+      * @pre out1 < out2.
+      * @return No devuelve nada.
+      * @post El objeto que llamaa a la funcion se modifica.
+      */
     void AdjustContrast (byte in1, byte in2, byte out1, byte out2);
 
-    // Calcula la media de los píxeles de una imagen entera o de un fragmento de ésta.
+    /**
+      * @brief Modifica el contraste de una imagen.
+      * @param i es la fila por donde se va a empezar .
+      * @param j es la columna por donde se va a empezar.
+      * @param height es el numero de filas al que se les va a hacer media.
+      * @param width es el numero de columnas que se va a coger para la media.
+      * @pre 0 <= (i,height) < get_rows().
+      * @pre 0 <= (j,width) < get_cols().
+      * @return Devuelve la media de pixeles de una imagen entera o de un trozo
+      * @post El objeto que llamaa a la funcion no se modifica.
+      */
     double Mean (int i, int j, int height, int width) const;
 
-    // Genera un icono como reducción de una imagen.
+    /**
+      * @brief Genera un icono como reduccion de una imagen.
+      * @param factor es el Factor de reduccion de la imagen original respecto al icono.
+      * @pre factor debe de ser mayor a 0 (factor > 0).
+      * @return Devuelve el icono de la imagen.
+      * @post La imagen no se modifica.
+      * @post La imagen resultante tendra tamaño int(filas/factor) X int (columnas/
+      * factor).Descartando los decimales de la division.
+      */
     Image Subsample(int factor) const;
 
-    // Genera una subimagen.
+    /**
+      * @brief Crea un subimagen apartir de una imagen.
+      * @param nrow es la fila inicial para empezar a recortar.
+      * @param ncol es la columna inicial para empezar a recortar.
+      * @param height es el numero de filas de la subimagen.
+      * @param width es el numero de columnas que tendra la subimagen.
+      * @return Devuelve la imagen recortada.
+      * @post El objeto que llama a la funcion no se modifica.
+      */
     Image Crop(int nrow, int ncol, int height, int width) const;x
 
-    // Genera una imagen aumentada 2x.
+    /**
+      * @brief Crea un una imagen con el zoomX2 hecha.
+      * @return Devuelve la imagen con el zoom hecha.
+      * @post El objeto que llama a la funcion no se modifica.
+      */
     Image Zoom2X() const;
 
 
