@@ -302,7 +302,7 @@ void set_pixel (int i, int j, byte value);
       * @return Devuelve la imagen recortada.
       * @post El objeto que llama a la funcion no se modifica.
       */
-    Image Crop(int nrow, int ncol, int height, int width) const;x
+    Image Crop(int nrow, int ncol, int height, int width) const;
 
     /**
       * @brief Crea un una imagen con el zoomX2 hecha.
