@@ -23,7 +23,10 @@ mayor parte de la sintaxis de Doxygen para comentar código en su
 
 # Introducción
 
-A RELLENAR POR EL ESTUDIANTE
+Esta es la documentacion de los cpp de prueba para cada funcion de la 
+minipractica.
+Esta practica esta realizada por:
+Francisco Jesús Losada Arauzo y Javier Gómez Moleón
 
 # Ejecutables
 
@@ -36,6 +39,54 @@ Calcula el negativo de una imagen
 @param "<FichImagenOriginal>" Imagen PGM a la que se va a calcular
 @param <FichImagenDestino> Imagen PGM resultado de calcular el negativo
 
+
+@image html subimagen_1.png
+## Subimagen:
+
+Calcula la subimagen de una imagen
+
+> __subimagen__ \<FichImagenOriginal\> \<FichImagenDestino\> \<numeroFilas\> \<numeroColumnas\> \<altura\> \<ancho\>
+@param "<FichImagenOriginal>" Imagen PGM a la que se va a calcular subimagen
+@param <FichImagenDestino> Imagen PGM resultado de calcular la subimagen
+@param "<numeroFilas>" La fila desde donde se empieza a coger pixeles
+@param <numeroColumnas> La columna desde donde se empieza a coger pixeles
+@param "<altura>" La altura que va a tener la imagen
+@param <ancho> El ancho que va a tener la imagen
+
+@image html zoom_1.png 
+## zoom:
+
+Calcula el zoom de una imagen
+
+> __zoom__ \<FichImagenOriginal\> \<FichImagenDestino\> \<lado\> \<columna\> \<lado\>
+@param "<FichImagenOriginal>" Imagen PGM a la que se va a calcular el zoom
+@param <FichImagenDestino> Imagen PGM resultado de calcular el zoom
+@param "<lado>" La fila desde donde se empieza a coger pixeles para zoom
+@param <columna> La columna desde donde se empieza a coger pixeles para zoom
+@param "<lado>" La altura y anchura de la imagen ladoxlado
+
+@image html icono_1.png
+## icono:
+
+Calcula el icono de una imagen
+
+> __icono__ \<FichImagenOriginal\> \<FichImagenDestino\> \<factor\>
+@param "<FichImagenOriginal>" Imagen PGM a la que se va a calcular el icono
+@param <FichImagenDestino> Imagen PGM resultado de calcular el icono
+@param "<factor>" El factor que se le aplica al icono
+
+@image html contraste_1.png
+## contraste:
+
+Calcula la constraste de una imagen
+
+> __contraste__ \<FichImagenOriginal\> \<FichImagenDestino\> \<in1\> \<in2\> \<out1\> \<out2\>
+@param "<FichImagenOriginal>" Imagen PGM a la que se va a calcular el contraste
+@param <FichImagenDestino> Imagen PGM resultado de calcular el contraste
+@param "<in1>" El comienzo del intervalo de inicio
+@param <in2> El final del intervalo de inicio
+@param "<out1>" EL principio del intervalo de salida
+@param <out2> El final del intervalo de salda
 
 
 */

@@ -178,22 +178,18 @@ CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.o: ../estudiante/src/zoom.cpp \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  /usr/include/c++/11/fstream \
-  /usr/include/c++/11/bits/codecvt.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
+  /usr/include/c++/11/cstring \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../estudiante/include/image.h \
   ../estudiante/include/imageIO.h
 
 
 ../estudiante/include/imageIO.h:
 
-/usr/include/c++/11/bits/fstream.tcc:
+/usr/include/string.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
+/usr/include/c++/11/cstring:
 
 /usr/include/c++/11/bits/istream.tcc:
 
@@ -383,8 +379,6 @@ CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.o: ../estudiante/src/zoom.cpp \
 
 /usr/include/c++/11/iosfwd:
 
-/usr/include/c++/11/bits/codecvt.h:
-
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /usr/include/c++/11/bits/stl_function.h:
@@ -519,6 +513,8 @@ CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.o: ../estudiante/src/zoom.cpp \
 
 /usr/include/c++/11/cstdlib:
 
+/usr/include/strings.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
@@ -544,8 +540,6 @@ CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.o: ../estudiante/src/zoom.cpp \
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
 /usr/include/c++/11/bits/basic_string.h:
-
-/usr/include/c++/11/fstream:
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
 
